@@ -1,6 +1,4 @@
 body {
-    display: flex;
-    flex-direction: column;
     margin: 0;
 }
 
@@ -29,6 +27,26 @@ li {
     margin: 0;
 }
 
-.body-container {
+.hero-banner {
     background-color: #1F2937;
+    display: flex;
+    justify-content: center;
+    color: white;
+    padding: 50px;
+}
+
+.hero-container {
+    display: flex;
+    width: 1000px;
+}
+
+.hero-container img {
+    width: 450px;
+    object-fit: scale-down;
+}
+
+.info-items img {
+    width: 100px;
+    height: 100px;
+    object-fit: scale-down; /* this makes it so the images of different dimensions can all be the same size and not have to stretch */
 }
