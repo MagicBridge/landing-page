@@ -16,6 +16,10 @@ body {
     justify-content: space-between;
 }
 
+.logo {
+    font-weight: bolder;
+}
+
 .right-list,
 .logo {
     display: flex;
@@ -27,8 +31,20 @@ li {
     margin: 0;
 }
 
-.hero-banner {
+a {
+    text-decoration: none;
+}
+
+a:visited {
+    color: white;
+}
+
+.hero-banner,
+.footer {
     background-color: #1F2937;
+}
+
+.hero-banner {
     display: flex;
     justify-content: center;
     color: white;
@@ -37,16 +53,101 @@ li {
 
 .hero-container {
     display: flex;
+    justify-content: space-between;
     width: 1000px;
+}
+
+.banner-left {
+    width: 500px;
+}
+
+.hero-main {
+    font-size: 48px;
+    font-weight: bolder;
+    width: 300px;
+}
+
+.hero-secondary {
+    color: #E5E7EB;
+}
+
+.hero-secondary,
+.author {
+    font-size: 18px;
+}
+
+.hero-container button {
+    margin-top: 15px;
+    background-color: #3882F6;
+    color: white;
+    font-weight: bold;
+    padding: 7px 25px;
+    border-radius: 7px;
+    border: none;
 }
 
 .hero-container img {
     width: 450px;
     object-fit: scale-down;
+    border-radius: 10px;
+}
+
+.information {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    padding: 50px;
+}
+
+.info-items {
+    display: flex;
+    width: 1000px;
+    margin-bottom: 20px;
+}
+
+.info-1,
+.info-2,
+.info-3,
+.info-4 {
+    flex: 1;
+    margin: 10px;
+}
+
+.information .title {
+    font-size: 36px;
+    font-weight: bolder;
+    color: #1F2937;
+    margin-bottom: 20px;
 }
 
 .info-items img {
-    width: 100px;
-    height: 100px;
+    width: 175px;
+    height: 175px;
     object-fit: scale-down; /* this makes it so the images of different dimensions can all be the same size and not have to stretch */
+    border: 2px #3882F6 solid;
+    border-radius: 12px;
+}
+
+.quote-container {
+    display: flex;
+    justify-content: center;
+    padding: 80px;
+    background-color: #E5E7EB;
+}
+
+.quote-box {
+    width: 800px;
+    display: flex;
+    flex-direction: column;
+    color: #1F2937;
+}
+
+.quote {
+    font-size: 36px;
+    font-style: italic;
+}
+
+.author {
+    align-self: flex-end;
+    font-weight: bold;
 }
