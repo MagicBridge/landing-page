@@ -1,4 +1,6 @@
 body {
+    font-family: 'Roboto', sans-serif;
+    src: url('https://fonts.googleapis.com/css?family=Roboto');
     margin: 0;
 }
 
@@ -76,14 +78,18 @@ a:visited {
     font-size: 18px;
 }
 
-.hero-container button {
-    margin-top: 15px;
+.hero-container button,
+.signup-right button {
     background-color: #3882F6;
     color: white;
     font-weight: bold;
     padding: 7px 25px;
     border-radius: 7px;
     border: none;
+}
+
+.hero-container button {
+    margin-top: 15px;
 }
 
 .hero-container img {
@@ -150,4 +156,37 @@ a:visited {
 .author {
     align-self: flex-end;
     font-weight: bold;
+}
+
+.signup {
+    display: flex;
+    justify-content: center;
+    padding: 80px;
+}
+
+.signup-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #3882F6;
+    border-radius: 5px;
+    width: 1000px;
+    padding: 30px;
+    color: white;
+}
+
+.signup-container .container {
+    display: flex;
+    justify-content: space-between;
+    width: 800px;
+}
+
+.signup-left .text {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.signup-right button {
+    border: 2px white solid;
+    margin-top: 3px;
 }
